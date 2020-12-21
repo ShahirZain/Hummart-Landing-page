@@ -23,6 +23,7 @@
     <main class="main">
         <div class="navMain">
             <div class="logo">
+             <span style="font-size:20px;cursor:pointer" class="menuButton" onclick="openNav()" >&#9776; </span>
                 <a class="logo" href="#" title="HumMart.com" aria-label="store logo">
                     <img src="logo.png" title="HumMart.com" alt="HumMart.com" width="210" height="58">
                 </a>
@@ -40,10 +41,14 @@
             </div>
             <div class="cart" >
                 <i class="fa fa-shopping-cart" aria-hidden="true" style="color: #7bae23;
-                "></i>
+                ">
+                <span class="cartCount">0</span>
+                </i>
             </div>
         </div>
-        <nav>
+        <nav id="mySidenav" class="sidenav">
+        <span class="sidenavMenu">Menu</span>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
                 <li><a href="#">GROCERY & STAPLES</a></li>
                 <li><a href="#"> NOODLES SAUCE & FROZEN FOODS</a></li>
@@ -53,7 +58,7 @@
                 <li><a href="#">BEVERAGES</a></li>
                 <li><a href="#" class="more" id="more">MORE</a></li>
             </ul>
-        </nav>
+        </nav> 
         <div class="MoreBlock" id="MoreBlock">
             <div>
                 <ul>
@@ -166,8 +171,8 @@
                             <div>
                                 <img src="images/1.jpg" alt="img" class="FMCGimg">
                             </div>
-                            <div>
-                                <p>BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </p>
+                            <div class="FMCG2_1Text">
+                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </a>
                                 <div>
                                     <span style="text-decoration: line-through;">Rs 2000</span>
                                     <input type="button" value="ADD TO CART">
@@ -181,8 +186,8 @@
                             <div>
                                 <img src="images/1.jpg" alt="img" class="FMCGimg">
                             </div>
-                            <div>
-                                <p>BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </p>
+                            <div class="FMCG2_1Text">
+                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </a>
                                 <div>
                                     <span style="text-decoration: line-through;">Rs 2000</span>
                                     <input type="button" value="ADD TO CART">
@@ -196,8 +201,8 @@
                             <div>
                                 <img src="images/1.jpg" alt="img" class="FMCGimg">
                             </div>
-                            <div>
-                                <p>BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </p>
+                            <div class="FMCG2_1Text">
+                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </a>
                                 <div>
                                     <span style="text-decoration: line-through;">Rs 2000</span>
                                     <input type="button" value="ADD TO CART">
@@ -211,8 +216,8 @@
                             <div>
                                 <img src="images/1.jpg" alt="img" class="FMCGimg">
                             </div>
-                            <div>
-                                <p>BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </p>
+                            <div class="FMCG2_1Text">
+                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </a>
                                 <div>
                                     <span style="text-decoration: line-through;">Rs 2000</span>
                                     <input type="button" value="ADD TO CART">
@@ -226,8 +231,8 @@
                             <div>
                                 <img src="images/1.jpg" alt="img" class="FMCGimg">
                             </div>
-                            <div>
-                                <p>BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </p>
+                            <div class="FMCG2_1Text">
+                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </a>
                                 <div>
                                     <span style="text-decoration: line-through;">Rs 2000</span>
                                     <input type="button" value="ADD TO CART">
@@ -241,8 +246,8 @@
                             <div>
                                 <img src="images/1.jpg" alt="img" class="FMCGimg">
                             </div>
-                            <div>
-                                <p>BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </p>
+                            <div class="FMCG2_1Text">
+                                <a href="#">BUY Nestle Everyday Original 900 gm GET 5 Everyday Lite Sachet 8.3 gm FREE </a>
                                 <div>
                                     <span style="text-decoration: line-through;">Rs 2000</span>
                                     <input type="button" value="ADD TO CART">

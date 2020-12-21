@@ -1,3 +1,5 @@
+
+
 more = document.getElementById('more').onmouseover = () =>{
     temp = document.getElementById('MoreBlock');
     temp.style.display = "flex";
@@ -6,7 +8,6 @@ more = document.getElementById('more').onmouseover = () =>{
         console.log(1)
     }
 }
-
 
 
 
@@ -22,5 +23,16 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 1000); // Change image every 2 seconds
+  setTimeout(showSlides, 1000); // Change image every 1 seconds
 }
+
+
+
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+

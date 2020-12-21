@@ -79,8 +79,24 @@
     background-color: red;
     border: 0px solid red;
 }
+.closebtn,.menuButton{
+    display: none;
+}
 .cart{
     right: 50px;
+}
+.cartCount{
+    position: absolute;
+    color: white;
+    margin: -20px 0 0 -10px;
+    background: tomato;
+    border-radius: 40px;
+    width: 20px;
+    /* padding: 3px; */
+    text-align: center;
+    align-items: center;
+    /* height: 40px; */
+    font-size: 18px;
 }
 .person{
     display: none;
@@ -149,8 +165,11 @@ font-size: 35px;
     height: 50%;
     margin-top: 20px;
 }
+
+
 nav{
     background-color: #7bae23;
+    width: 90vw;
 }
 nav ul{
     display: flex;
@@ -167,8 +186,11 @@ nav ul li a{
     text-decoration: none;
     color: white;
     padding: 17px ;
-    padding-bottom: -5px;
+    /* padding-bottom: -5px; */
     font-size: 12px;
+}
+.sidenavMenu{
+    display: none;
 }
 
 .MoreBlock{
@@ -301,7 +323,9 @@ nav ul li a{
     margin-right: 10px;
 }
 .FMCG2_1{
-    border: 2px solid black;
+}
+.FMCG2_1Text{
+    margin-left: 5px;
 }
 .FMCG2_1Text a{
     text-decoration: none;
@@ -334,14 +358,11 @@ nav ul li a{
 }
 .FMCGimg {
     width: 220px;
-    box-shadow: silver;
+    box-shadow: rgb(190, 184, 184);
 }
 .FMCGimg:hover {
     padding: 2px;
     box-shadow:  5px 5px 8px 4px gray;
-}
-.FMCG2_2{
-    border: 2px solid black;
 }
 
 
@@ -381,6 +402,7 @@ nav ul li a{
         height: 50%;
         margin-top: 20px;
     }
+    
 }
 /* meda queries for 600px */
 @media screen and (max-width: 600px) {
@@ -388,6 +410,47 @@ nav ul li a{
         width: 138px;
         height: 22px;
     }
+    .menuButton{
+        display: inline;
+    }
+    #mySidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7bae23;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenavMenu{
+    display: inline;
+    position: absolute;
+  top: 10px;
+  right: 100px;
+  font-size: 25px;
+  margin-left: 50px;
+  text-decoration :none;
+  color:  white;
+}
+
+.closebtn {
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration :none;
+  color:  white;
+}
+
+
+.sidenav ul li a:hover {
+  color: #f1f1f1;
+}
     .fa{
         font-size: 24px;
     }
