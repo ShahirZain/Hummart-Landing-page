@@ -8,6 +8,7 @@ more = document.getElementById("more").onmouseover = () => {
     };
   };
   
+  
   var slideIndex = 0;
   showSlides();
   
@@ -22,7 +23,7 @@ more = document.getElementById("more").onmouseover = () => {
       slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 6000); // Change image every 1 seconds
+    setTimeout(showSlides, 2000); // Change image every 1 seconds
   }
   
   function openNav() {

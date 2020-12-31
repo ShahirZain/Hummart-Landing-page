@@ -333,6 +333,7 @@ nav ul li a {
   overflow-wrap: break-word;
   color: rgb(179, 178, 178);
 }
+
 .FMCGgoods {
   display: flex;
   flex-direction: column;
@@ -420,6 +421,8 @@ nav ul li a {
   width: 70px;
   /* height: 3em; */
 }
+
+/*  categories styles */
 
 .categoriesWrapper {
   background-color: rgba(250, 246, 246, 0.829);
@@ -697,7 +700,7 @@ nav ul li a {
     flex-direction: column;
   }
   .features * {
-    width: auto;
+    /* width: auto; */
     margin-right: 1px;
     padding: 5px 0;
     background-color: #f1f4f5;
@@ -721,7 +724,10 @@ nav ul li a {
     /* display: none; */
     margin-top: 470px;
   }
-
+.categories-wrapper-column{
+  display: flex;
+  flex-direction: column !important;
+}
   .categoriesWrapper {
     margin-top: 50px;
   }
