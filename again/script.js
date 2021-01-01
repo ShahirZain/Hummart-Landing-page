@@ -9,6 +9,7 @@ more = document.getElementById("more").onmouseover = () => {
   };
   
   
+  
   var slideIndex = 0;
   showSlides();
   
@@ -26,12 +27,14 @@ more = document.getElementById("more").onmouseover = () => {
     setTimeout(showSlides, 2000); // Change image every 1 seconds
   }
   
+
   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav-mbl").style.marginLeft = "105px";
+    document.getElementById("mySidenav-mbl").style.width = "max-content";
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav-mbl").style.marginLeft = "-120px";
   }
   
   // const flavoursContainer = document.getElementById("slider");

@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "times new roman", times;
-  /* line-height: 1.6; */
+  font-family:  sans-serif;
 }
 #header {
   background-color: black;
@@ -40,7 +39,17 @@
 .main {
   margin: 10px auto;
   width: 1100px;
+
 }
+* {
+  font-family: Sans-Serif;
+}
+.main1{
+  display: none;
+  /* flex: 1 !important; */
+}
+
+
 .person {
   display: none;
 }
@@ -116,12 +125,15 @@ nav ul li {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  height: 49px;
+  height: 25px;
+  display: inline-block;
+  padding: 10px 0;
+  
 }
 nav ul li a {
   text-decoration: none;
   color: white;
-  padding: 17px;
+  padding: 0px 0px;
   font-size: 12px;
 }
 
@@ -153,6 +165,7 @@ nav ul li a {
   display: none;
   padding: 20px;
 }
+
 
 /* slider styling  */
 .main-images {
@@ -208,11 +221,10 @@ nav ul li a {
 .features {
   display: flex;
   flex-direction: row;
-  background-color: #f1f4f5;
-  height: 150px;
+  /* height: 150px; */
   justify-content: space-between;
 }
-.features1 {
+.features1,.features2 ,.features3{
   margin: 40px 0px 0 0;
 }
 
@@ -234,9 +246,7 @@ nav ul li a {
   color: rgb(179, 178, 178);
 }
 
-.features2 {
-  margin: 40px 0px 0 0;
-}
+
 
 .features2Body {
   display: flex;
@@ -255,10 +265,6 @@ nav ul li a {
   font-size: 12px;
   overflow-wrap: break-word;
   color: rgb(179, 178, 178);
-}
-
-.features3 {
-  margin: 40px 0px 0 0;
 }
 
 .features3Body {
@@ -381,6 +387,7 @@ nav ul li a {
 .categories-wrapper-column {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 .categoriesWrapper > h3 {
@@ -423,6 +430,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   width: 40%;
+  padding-bottom: 10px;
 }
 .angleIcon {
   position: relative;
@@ -544,7 +552,7 @@ nav ul li a {
     height: 30px;
   }
   .searchBar .textBox {
-    width: 300px;
+    width: 320px;
     height: 10px;
     color: white;
   }
@@ -565,51 +573,74 @@ nav ul li a {
 /* meda queries for 600px */
 @media screen and (max-width: 600px) {
 
+  
   .main {
-  margin: 10px auto;
-  width: 350px;
+  margin: 0px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+.main2{
+  margin-left: 10px;
+  width: 340px;
+}
+.main1{
+  display: block;
+  margin-left: -135px !important;
 }
   .logo img {
-    width: 138px;
+    width: 120px;
     height: 22px;
   }
   .menuButton {
     display: inline;
   }
-  #mySidenav {
-    display: block;
-    height: 100%;
+  #mySidenav{
+    display: none;
+  }
+  #mySidenav-mbl {
+    margin: 0;
+    height: 100vh; 
     width: 0%;
-    /* margin-left: -100px; */
-    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #7bae23;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    /* padding: 10px; */
   }
-  .sidenavMenu {
-    display: inline;
-    position: absolute;
-    top: 10px;
+  
+  .sidenavMenu-mbl {
+    /* top: 200px; */
+    display: inline-block;
+    margin-top: 10px;
     right: 100px;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 50px;
     text-decoration: none;
     color: white;
   }
 
-  .closebtn {
+  .closebtn-mbl {
     display: inline;
-    position: absolute;
     top: 0;
-    right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    float: right;
     text-decoration: none;
     color: white;
+    padding-right: 10px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sidenav-mbl .mbl-ul {
+    flex-direction: column;
+  }
+  nav ul{
+    padding-left: 10px;
   }
 
   .sidenav ul li a:hover {
@@ -627,40 +658,37 @@ nav ul li a {
     order: 1;
   }
   .navMain :nth-child(5) {
-    margin-right: 5vw;
+    /* margin-right: 10px; */
     order: 3;
     font-size: 8px;
-    margin-right: 20px;
+    margin-right: 5px;
   }
   .navMain :nth-child(3) {
     order: 2;
     display: block;
-    margin-left: 25vw;
+    margin-left: 60px;
   }
   .navMain :nth-child(4) {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     height: 0;
     order: 3;
     display: none;
   }
   .navMain :nth-child(2) {
+
     order: 4;
-    margin-left: 9px;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    margin-left: 10px;
   }
 
+
   .searchBar .btnSearch {
-    width: 15vw;
+    width: 16vw;
     height: 35px;
   }
   .searchBar .textBox {
-    width: 70vw;
+    width: 72vw;
     height: 35px;
-    color: white;
+    color: black;
   }
   .googlePlay {
     width: 30%;
@@ -680,9 +708,7 @@ nav ul li a {
     flex-direction: column;
     font-size: 12px;
   }
-  nav ul {
-    flex-direction: column;
-  }
+  
 /* slider start */
   .main-images {
     margin-top: 5px;
@@ -695,7 +721,7 @@ nav ul li a {
 
   .main-images :nth-child(1) {
     order: 2;
-    width: 330px;
+    width: 100%;
     height: calc(330px/2);
   }
   .main-images :nth-child(2) {
@@ -706,22 +732,23 @@ nav ul li a {
     flex-direction: row;
   }
   .main-images1 div img {
-    width: 44vw !important;
+    /* width: 47vw !important; */
     height: calc(44vw/2);
   }
 /* slider end */
   .features {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   .features * {
-    width: auto;
-    margin-right: 1px;
+    /* width: auto; */
     padding: 5px 0;
     background-color: #f1f4f5;
   }
   .features1Body p {
-    width: 200px;
+    /* width: 200px; */
     font-size: 12px;
     overflow-wrap: break-word;
   }
@@ -730,14 +757,13 @@ nav ul li a {
     font-size: 12px;
     overflow-wrap: break-word;
   }
-  .features1 {
-    padding-left: 17px;
-  }
+ 
 
   /* FMCG good display none becuase it is not performing well */
   .FMCGgoods {
-    /* display: none; */
-    margin-top: 470px;
+    display: none;
+    margin-top: 50px;
+    width: 100vw;
   }
 
 .categories-wrapper-column{
@@ -746,6 +772,7 @@ nav ul li a {
 }
   .categoriesWrapper {
     margin-top: 50px;
+    /* width: 100vw; */
   }
   .categories {
     margin-top: 30px;
@@ -763,9 +790,7 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
-  }
-  .column1_ > div,
-  .column2_ > div {
+ margin-left: 15px;
     background-color: white;
     border: 1px solid rgb(240, 240, 240);
     width: 322px;
@@ -795,5 +820,8 @@ nav ul li a {
   }
   .angleIcon{
     margin-right: 5px;
+  }
+  .para{
+    display: none;
   }
 }
